@@ -1,42 +1,64 @@
-# Dysarthria Severity Classification using Temporal, Prosodic & Spectral Features
+# Automatic Speech Severity Classification using Temporal, Prosodic & Spectral Features
 
-This repository provides a high-level overview of research conducted on automated dysarthria severity classification using machine learning techniques. The study extends traditional MFCC-based methods by integrating features across three domains — **temporal**, **prosodic**, and **spectral** — and evaluates performance using deep learning models such as **LSTM** and **TDNN**.
+This repository is a continuation of [Automatic-Speech-Disorder-Detection](https://github.com/Bhanuu01/Automatic-Speech-Disorder-Detection), extending our prior work on dysarthric speech detection by focusing on **severity classification** using multi-domain feature fusion and deep learning models.
 
-> 🚧 This research is currently under review for journal publication. Code, models, and detailed results will be released post-acceptance.
-
----
-
-## 🔬 Summary
-
-Dysarthria, a neuro-motor speech disorder, impacts speech rate, articulation, and vocal modulation. To address the limitations of using only MFCC features, this work introduces a broader feature set and investigates their individual and combined performance for classifying severity levels.
-
-Key contributions:
-- Extracted and analyzed 15 features across 3 domains (e.g., **AZCR**, **Spectral Flatness**, **STFT**).
-- Compared 7 models including SVM, RF, ANN, CNN, LSTM, and TDNN.
-- Performed both **speaker-dependent** and **speaker-independent** evaluations using TORGO and UASpeech datasets.
-- Applied augmentation techniques: VTLP, pitch shifting, formant shifting, and speaking rate modification.
+> ⚠️ This research is currently under review. Code and experimental assets will be released post-publication.
 
 ---
 
-## 📈 Highlights
+## 🔍 Project Overview
 
-- 📉 Achieved **61.1% improvement** in classification error rate over MFCC-only baseline.
-- 🔁 Augmentation techniques led to **42.86% relative improvement** in speaker-dependent settings.
-- 🤖 TDNN and LSTM showed superior performance with fused feature groups.
+While earlier work focused on binary detection of speech disorders, this study addresses the **classification of dysarthria severity** using a richer set of speech features and advanced models. We evaluate features across **temporal**, **prosodic**, and **spectral** domains and conduct experiments in both **speaker-dependent** and **speaker-independent** settings.
 
----
-
-## 📁 Datasets
-
-Due to licensing restrictions, datasets are not included here. You can request access from:
-
-- **TORGO**: https://www.cs.toronto.edu/~complingweb/data/TORGO/torgo.html  
-- **UASpeech**: http://www.isle.illinois.edu/sst/data/UASpeech/
+Key additions in this phase:
+- Multi-feature group analysis (15+ features)
+- Augmentation methods: VTLP, pitch/formant/speaking rate modification
+- Robust classification using LSTM and TDNN
+- Experiments on TORGO and UASpeech datasets
 
 ---
 
-## 📌 Note
+## 🔬 Techniques & Highlights
 
-This is a **research-only** repository placeholder. Code and trained models will be shared after formal acceptance of the associated publication.
+- 🎯 **Feature domains**:  
+  - *Temporal*: Duration, AZCR  
+  - *Prosodic*: Pitch, Loudness  
+  - *Spectral*: MFCC, STFT, Spectral Flatness/Entropy
+
+- ⚙️ **Models tested**:  
+  SVM, RF, ANN, CNN, LSTM, TDNN
+
+- 🔁 **Augmentation**:  
+  Improved generalization using speech transformation techniques
+
+- 📈 **Performance gains**:  
+  - Up to **61.1% CER reduction** over MFCC-only baseline  
+  - Combined temporal–prosodic–spectral features outperform isolated features  
+  - Strong generalization to unseen speakers
 
 ---
+
+## 📊 Dataset Information
+
+This study uses:
+- **TORGO** dataset – [Access here](https://www.cs.toronto.edu/~complingweb/data/TORGO/torgo.html)
+- **UASpeech** dataset – [Access here](http://www.isle.illinois.edu/sst/data/UASpeech/)
+
+Due to dataset licenses, we cannot redistribute data directly in this repository.
+
+---
+
+## 📂 Related Work
+
+This is a follow-up to:  
+🔗 [Automatic-Speech-Disorder-Detection](https://github.com/Bhanuu01/Automatic-Speech-Disorder-Detection) – focused on binary classification using augmented MFCC and traditional ML.
+
+---
+
+## 📬 Contact
+
+For academic queries or collaboration opportunities, please reach out to:
+
+**Bhanuja Karumuru**  
+📧 bhanujakarumuru2@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/bhanujakarumuru)
