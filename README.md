@@ -2,7 +2,7 @@
 
 This repository is a continuation of [Automatic-Speech-Disorder-Detection](https://github.com/Bhanuu01/Automatic-Speech-Disorder-Detection), extending our prior work on dysarthric speech detection by focusing on **severity classification** using multi-domain feature fusion and deep learning models.
 
-> ⚠️ This research is currently under review. Code and experimental assets will be released post-publication.
+> ⚠️ This research is currently under review. experimental assets will be released post-publication.
 
 ---
 
