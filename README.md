@@ -44,8 +44,6 @@ This study uses:
 - **TORGO** dataset – [Access here](https://www.cs.toronto.edu/~complingweb/data/TORGO/torgo.html)
 - **UASpeech** dataset – [Access here](http://www.isle.illinois.edu/sst/data/UASpeech/)
 
-Due to dataset licenses, we cannot redistribute data directly in this repository.
-
 ---
 
 ## 📂 Related Work
