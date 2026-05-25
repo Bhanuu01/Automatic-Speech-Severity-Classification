@@ -1,62 +1,40 @@
-# Automatic Speech Severity Classification using Temporal, Prosodic & Spectral Features
+# Automatic Speech Severity Classification
 
-This repository is a continuation of [Automatic-Speech-Disorder-Detection](https://github.com/Bhanuu01/Automatic-Speech-Disorder-Detection), extending our prior work on dysarthric speech detection by focusing on **severity classification** using multi-domain feature fusion and deep learning models.
+This repository extends the earlier SPCOM 2024 work on dysarthric speech classification into a broader severity-classification study using temporal, prosodic, and spectral features together with augmentation and deep learning models.
 
-> ⚠️ This research is currently under review. experimental assets will be released post-publication.
+The main goal here was to move beyond a narrower MFCC-centered setup and test how well fused feature groups generalize across datasets and speakers.
 
----
+## What this work covers
 
-## 🔍 Project Overview
+- temporal, prosodic, and spectral feature extraction
+- speaker-dependent and speaker-independent experiments
+- augmentation methods such as VTLP and pitch, formant, and speaking-rate changes
+- classical and neural models including SVM, random forest, ANN, CNN, LSTM, and TDNN
+- evaluation on TORGO and UASpeech
 
-While earlier work focused on binary detection of speech disorders, this study addresses the **classification of dysarthria severity** using a richer set of speech features and advanced models. We evaluate features across **temporal**, **prosodic**, and **spectral** domains and conduct experiments in both **speaker-dependent** and **speaker-independent** settings.
+## Main takeaways
 
-Key additions in this phase:
-- Multi-feature group analysis (15+ features)
-- Augmentation methods: VTLP, pitch/formant/speaking rate modification
-- Robust classification using LSTM and TDNN
-- Experiments on TORGO and UASpeech datasets
+- combined temporal, prosodic, and spectral features performed better than isolated feature groups
+- augmentation improved robustness on low-resource dysarthric speech data
+- the strongest setup reduced character error rate by up to 61.1% over the MFCC-only baseline discussed in the write-up
 
----
+## Relationship to the earlier project
 
-## 🔬 Techniques & Highlights
+This repo is a follow-up to:
 
-- 🎯 **Feature domains**:  
-  - *Temporal*: Duration, AZCR  
-  - *Prosodic*: Pitch, Loudness  
-  - *Spectral*: MFCC, STFT, Spectral Flatness/Entropy
+- https://github.com/Bhanuu01/Automatic-Speech-Disorder-Detection
 
-- ⚙️ **Models tested**:  
-  SVM, RF, ANN, CNN, LSTM, TDNN
+The earlier work focused on in-domain augmentation for severity classification from speech. This phase broadened the feature space, model choices, and evaluation setup.
 
-- 🔁 **Augmentation**:  
-  Improved generalization using speech transformation techniques
+## Current status
 
-- 📈 **Performance gains**:  
-  - Up to **61.1% CER reduction** over MFCC-only baseline  
-  - Combined temporal–prosodic–spectral features outperform isolated features  
-  - Strong generalization to unseen speakers
+This line of work later led into the journal paper:
 
----
+- *Fusion of data augmentation for improved dysarthria severity classification*
 
-## 📊 Dataset Information
+Public assets in this repo are limited, but the project remains part of my speech and machine learning research path.
 
-This study uses:
-- **TORGO** dataset – [Access here](https://www.cs.toronto.edu/~complingweb/data/TORGO/torgo.html)
-- **UASpeech** dataset – [Access here](http://www.isle.illinois.edu/sst/data/UASpeech/)
+## Contact
 
----
-
-## 📂 Related Work
-
-This is a follow-up to:  
-🔗 [Automatic-Speech-Disorder-Detection](https://github.com/Bhanuu01/Automatic-Speech-Disorder-Detection) – focused on binary classification using augmented MFCC and traditional ML.
-
----
-
-## 📬 Contact
-
-For academic queries or collaboration opportunities, please reach out to:
-
-**Bhanuja Karumuru**  
-📧 bhanujakarumuru2@gmail.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/bhanujakarumuru)
+- LinkedIn: https://www.linkedin.com/in/bhanujakarumuru/
+- Email: bk3170@nyu.edu
